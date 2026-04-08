@@ -5,7 +5,50 @@
 /* Name: Ruhamah Kairat
    ID: 240452
    Date: 16 March 2025
-   Algorithm: (Write a simple guessing program)
+   Algorithm: Number Guessing Game
+Step 1: Initialization
+Start the program.
+
+Seed the random number generator using the current time to ensure a different number each run.
+
+Generate a random integer, targetNumber, between 1 and 20.
+
+Set a counter, attempts, to 0.
+
+Set a boolean flag, isGuessed, to false.
+
+Step 2: The Main Game Loop
+While attempts is less than 5 AND isGuessed is false:
+
+Increment attempts by 1.
+
+Call the Get User Guess function to retrieve the player's input.
+
+Compare the guess to the targetNumber:
+
+If guess == targetNumber:
+
+Set isGuessed to true.
+
+Call the Successful Message function.
+
+If guess < targetNumber:
+
+Call the Unsuccessful Message function with the hint "Too Low."
+
+If guess > targetNumber:
+
+Call the Unsuccessful Message function with the hint "Too High."
+
+Step 3: Final Outcome
+After the loop ends, check if isGuessed is still false.
+
+If true (meaning the user failed after 5 tries):
+
+Call the Sorry Message function, displaying the targetNumber and the message that they should have known it by now.
+
+Step 4: Termination
+End the program.
 */
 
 // Function Prototypes
